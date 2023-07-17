@@ -1,0 +1,15 @@
+// Breakpoints
+@mixin for-size($size) {
+    @if $size == 'desktop' {
+      @media (min-width: $breakpoint-desktop) { @content; }
+    } @else {
+      @media (min-width: $breakpoint-mobile) { @content; }
+    }
+  }
+
+// Font weight
+@mixin font-weight-HankenGrotesk($font-size: $font-size-md, $font-weight: $font-weight-regular) {
+    font-family: $font-hankenGrotesk;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
